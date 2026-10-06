@@ -17,8 +17,8 @@ async function loadModel() {
             <p>Loading AI model...</p>
         `;
 
-        const modelURL = "./model/model.json";
-        const metadataURL = "./model/metadata.json";
+        const modelURL = "./model.json";
+        const metadataURL = "./metadata.json";
 
         model = await tmImage.load(modelURL, metadataURL);
 
