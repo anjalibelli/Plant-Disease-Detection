@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plant Disease Detection AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌱 Plant Disease Detection AI</h1>
+        <p>Upload a plant leaf image and analyze it with AI</p>
+    </header>
+
+    <main class="container">
+
+        <section class="upload-card">
+
+            <h2>Upload Leaf Image</h2>
+
+            <div class="upload-area" id="uploadArea">
+
+                <div class="upload-icon">📷</div>
+
+                <p>Choose a leaf image</p>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/*"
+                    hidden
+                >
+
+                <button id="chooseBtn">
+                    Choose Image
+                </button>
+
+            </div>
+
+            <div class="preview-container">
+                <img id="preview" alt="Leaf Preview">
+            </div>
+
+            <button id="detectBtn" class="detect-btn">
+                🔍 Detect Disease
+            </button>
+
+        </section>
+
+
+        <section class="result-card">
+
+            <h2>Detection Result</h2>
+
+            <div id="result">
+
+                <div class="result-icon">
+                    🌿
+                </div>
+
+                <p>
+                    Upload a leaf image to start detection.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Plant Disease Detection AI | HTML • CSS • JavaScript</p>
+    </footer>
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

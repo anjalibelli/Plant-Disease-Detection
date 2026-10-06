@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    min-height: 100vh;
+    color: #1b4332;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #2d6a4f;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.upload-card,
+.result-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.upload-area {
+    border: 2px dashed #52b788;
+    border-radius: 15px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.upload-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.upload-area p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#chooseBtn {
+    background: #40916c;
+    color: white;
+}
+
+#chooseBtn:hover {
+    background: #2d6a4f;
+}
+
+.preview-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#preview {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 15px;
+    display: none;
+}
+
+.detect-btn {
+    width: 100%;
+    margin-top: 25px;
+    background: #1b4332;
+    color: white;
+}
+
+.detect-btn:hover {
+    background: #081c15;
+}
+
+.result-card {
+    text-align: center;
+}
+
+.result-icon {
+    font-size: 70px;
+    margin: 30px 0 20px;
+}
+
+#result p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    background: #1b4332;
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
